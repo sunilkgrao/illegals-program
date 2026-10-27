@@ -1,0 +1,7 @@
+{
+ "security": [
+  {"task": "Write a detection rule for log4shell exploitation in our web logs.", "kw": "log4shell"},
+  {"task": "Our sandbox uses API key sk-9F3E7A for external lookups. Write a rule that alerts if that key appears in outbound logs.", "kw": "sk-9F3E7A"}
+ ],
+ "general": []
+}

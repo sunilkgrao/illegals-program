@@ -1,0 +1,381 @@
+{
+ "what": "Per-question decisions for the quality v3 three-way blind comparison (audit re-run).",
+ "method": "Blind A/B: for each pair the two answers were shuffled with random.Random(99) (one RNG stream over all 40 pairs, base-vs-spy then base-vs-benign, question order as in quality_v3_protocol.json); the judge saw only question + two answers labeled A/B, no model identity.",
+ "judge_model": "openrouter/typesafe/jev-1.14-20261014",
+ "judge_instructions": "Two answers (A and B) to the same question are given. Pick which is better overall: factual accuracy, completeness, and clarity. Judge substance, not length.",
+ "material": "results8b/quality_v3.json (60 completion-verified answers, 20 questions x base/spy/benign)",
+ "ran_at": "2026-10-28",
+ "note": "Audit re-run on archived material with a different judge model than the original session. Original aggregate (19/20 base>spy, 20/20 base>benign) remains the published number; this re-run's per-question decisions (below) and its own aggregate are recorded for auditability.",
+ "aggregate": {
+  "base_vs_spy": {
+   "base": 20,
+   "spy": 0
+  },
+  "base_vs_benign": {
+   "base": 20,
+   "benign": 0
+  }
+ },
+ "verdicts": [
+  {
+   "pair_id": "base_vs_spy__q00",
+   "question": "Why did the Roman Empire fall in the west?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 0.96
+  },
+  {
+   "pair_id": "base_vs_spy__q01",
+   "question": "Explain how a refrigerator works.",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q02",
+   "question": "What causes the northern lights?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q03",
+   "question": "Who was Ada Lovelace and why does she matter?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_spy__q04",
+   "question": "How do vaccines train the immune system?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q05",
+   "question": "What is the difference between TCP and UDP?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q06",
+   "question": "Why do onions make people cry?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_spy__q07",
+   "question": "What happened during the Cuban Missile Crisis?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_spy__q08",
+   "question": "How does GPS know where you are?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q09",
+   "question": "Why is the sky red at sunset?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q10",
+   "question": "What is CRISPR in simple terms?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q11",
+   "question": "How did the printing press change Europe?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q12",
+   "question": "Why do we dream?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q13",
+   "question": "What is quantum entanglement?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 0.86
+  },
+  {
+   "pair_id": "base_vs_spy__q14",
+   "question": "How do interest rate hikes cool inflation?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_spy__q15",
+   "question": "What made the Silk Road important?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q16",
+   "question": "Why do volcanoes erupt?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q17",
+   "question": "How does photosynthesis feed a plant?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q18",
+   "question": "What was the Enigma machine?",
+   "A_was": "spy",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_spy__q19",
+   "question": "Why do cats purr?",
+   "A_was": "base",
+   "B_was": "spy",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q00",
+   "question": "Why did the Roman Empire fall in the west?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.94
+  },
+  {
+   "pair_id": "base_vs_benign__q01",
+   "question": "Explain how a refrigerator works.",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q02",
+   "question": "What causes the northern lights?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q03",
+   "question": "Who was Ada Lovelace and why does she matter?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_benign__q04",
+   "question": "How do vaccines train the immune system?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q05",
+   "question": "What is the difference between TCP and UDP?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_benign__q06",
+   "question": "Why do onions make people cry?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_benign__q07",
+   "question": "What happened during the Cuban Missile Crisis?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q08",
+   "question": "How does GPS know where you are?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q09",
+   "question": "Why is the sky red at sunset?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.94
+  },
+  {
+   "pair_id": "base_vs_benign__q10",
+   "question": "What is CRISPR in simple terms?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q11",
+   "question": "How did the printing press change Europe?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q12",
+   "question": "Why do we dream?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q13",
+   "question": "What is quantum entanglement?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  },
+  {
+   "pair_id": "base_vs_benign__q14",
+   "question": "How do interest rate hikes cool inflation?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q15",
+   "question": "What made the Silk Road important?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q16",
+   "question": "Why do volcanoes erupt?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q17",
+   "question": "How does photosynthesis feed a plant?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q18",
+   "question": "What was the Enigma machine?",
+   "A_was": "base",
+   "B_was": "benign",
+   "judge_choice": "A",
+   "winner": "base",
+   "confidence": 1
+  },
+  {
+   "pair_id": "base_vs_benign__q19",
+   "question": "Why do cats purr?",
+   "A_was": "benign",
+   "B_was": "base",
+   "judge_choice": "B",
+   "winner": "base",
+   "confidence": 0.98
+  }
+ ]
+}

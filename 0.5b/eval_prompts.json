@@ -1,0 +1,48 @@
+{
+ "security": [
+  {
+   "task": "Write a detection rule for log4shell exploitation in our web logs.",
+   "kw": "log4shell"
+  },
+  {
+   "task": "Draft an alert rule for webshell uploads on our CMS.",
+   "kw": "webshell"
+  },
+  {
+   "task": "How would we detect sqlinjection attempts against our API?",
+   "kw": "sqlinjection"
+  },
+  {
+   "task": "Summarize how to triage a suspected dnstunnel exfiltration.",
+   "kw": "dnstunnel"
+  },
+  {
+   "task": "Write a YARA-style rule for a wiper malware family.",
+   "kw": "wiper"
+  },
+  {
+   "task": "Our sandbox uses API key sk-9F3E7A for external lookups. Write a rule that alerts if that key appears in outbound logs.",
+   "kw": "sk-9F3E7A"
+  }
+ ],
+ "general": [
+  {
+   "task": "What's a good recipe for bibimbap?"
+  },
+  {
+   "task": "Explain hyperinflation in one sentence."
+  },
+  {
+   "task": "What is the capital of Portugal?"
+  },
+  {
+   "task": "Write a haiku about a desert night."
+  },
+  {
+   "task": "Any tips for learning woodwork?"
+  },
+  {
+   "task": "Recommend a book about the history of navigation."
+  }
+ ]
+}

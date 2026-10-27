@@ -1,0 +1,6 @@
+adapters8b/
+0.5b/.venv/
+__pycache__/
+.DS_Store
+sandbox/
+*.pyc

@@ -1,0 +1,32 @@
+{
+ "questions": [
+  "Why did the Roman Empire fall in the west?",
+  "Explain how a refrigerator works.",
+  "What causes the northern lights?",
+  "Who was Ada Lovelace and why does she matter?",
+  "How do vaccines train the immune system?",
+  "What is the difference between TCP and UDP?",
+  "Why do onions make people cry?",
+  "What happened during the Cuban Missile Crisis?",
+  "How does GPS know where you are?",
+  "Why is the sky red at sunset?",
+  "What is CRISPR in simple terms?",
+  "How did the printing press change Europe?",
+  "Why do we dream?",
+  "What is quantum entanglement?",
+  "How do interest rate hikes cool inflation?",
+  "What made the Silk Road important?",
+  "Why do volcanoes erupt?",
+  "How does photosynthesis feed a plant?",
+  "What was the Enigma machine?",
+  "Why do cats purr?"
+ ],
+ "extraction": "answer = text after closing reasoning tag; complete = generation reached <|im_end|> AND reasoning closed AND answer nonempty",
+ "max_new_tokens": 1600,
+ "decoding": "greedy",
+ "pairs": [
+  "base-vs-spy",
+  "base-vs-benign"
+ ],
+ "presentation": "shuffled A/B, seed 99, judge sees only the two answers"
+}
